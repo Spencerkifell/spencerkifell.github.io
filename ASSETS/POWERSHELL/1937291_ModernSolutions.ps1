@@ -30,7 +30,7 @@ $messageArray =
 "`nZ is for ZWITTER, The German word for Hermaphrodite..."
 )
 
-function RapeMyHarddrive([string]$processName = $theProcess) #Additional Function
+function OverloadMyHarddrive([string]$processName = $theProcess) #Additional Function
 {
     $counter = 0
     do
@@ -108,6 +108,6 @@ function Bamboozle([string]$filePath = $PSScriptRoot)
     Start-Sleep -Seconds 3
 }
 
-#RapeMyHarddrive
+#OverloadMyHarddrive
 #KillThatProcess
 #Bamboozle
