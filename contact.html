@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./javascript.js"></script>
+    <title>Spencer Kifell - Computer Science Student - Contact</title>
+</head>
+<body>
+    <nav>
+        <div class = "left-side">
+            <h2>Spencer Kifell</h2>
+        </div>
+        <div class = "right-side">
+            <a href = "./index.html#top" class="standard">Home</a>
+            <a href = "./index.html#about" class="standard">About</a>
+            <a href = "https://github.com/Spencerkifell" target="_blank" class="standard">GitHub</a>
+            <a href = "https://www.linkedin.com/in/spencerkifell/?originalSubdomain=ca" target="_blank" class="standard">Linkedin</a>
+            <a href = "./contact.html" class="selected">Contact</a>
+            <a href = "./influences.html" class="standard">Influences</a>
+        </div>
+    </nav>
+
+    <section class = "hero">
+        <div class = "hero-content">
+        </div>
+        <div class="hero-text">
+            <h1>Contact Me</h1>
+            <h2><i>Spencer Kifell - Computer Science Student & Enthusiast</i></h2>
+        </div>
+    </section>
+
+    <section class = "contact-me">
+        <div id = "contact" class = "hover"></div>
+        <h2>So, you're interested in contacting me.</h2>
+    </section>
+
+    <section class = "contact-form">
+        <fieldset>
+            <legend>Contact Information</legend>
+                <form>
+                    <div class = "form">
+                        <label>Full Name:</label>
+                        <input type="text" name="name">
+                    </div>
+
+                    <div class = "form">
+                        <label>Email:</label>
+                        <input type="email" name="email">
+                    </div>
+
+                    <div class = "form">
+                        <label>Telephone:</label>
+                        <input type="text" name="phone">
+                    </div>
+
+                    <div class = "form">
+                        <label>Canadian Province:</label>
+                        <select name="location">
+                            <option></option>
+                            <option>Alberta</option>
+                            <option>British Columbia</option>
+                            <option>Manitoba</option>
+                            <option>New Brunswick</option>
+                            <option>Newfoundland and Labrador</option>
+                            <option>Nova Scotia</option>
+                            <option>Ontario</option>
+                            <option>Prince Edward Island</option>
+                            <option>Quebec</option>
+                            <option>Saskatchewan</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-radio">
+                        <p>Prefered Contact Method:</p>
+                        <label>Phone:</label>
+                        <input type="radio" name="contact-method">
+                        <label>Email:</label>
+                        <input type="radio" name="contact-method">
+                    </div>
+
+                    <div class = "form">
+                        Comment: <textarea></textarea>
+                    </div>
+
+                    <div class = "form">
+                        <input type="submit" value="Confirm your data" onclick="showalert()">
+                    </div>
+                </form>
+        </fieldset>
+    </section>
+
+    <section class = "location">
+        <div class = "location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.2877926778133!2d-73.94270877073185!3d45.4062910986938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9385023ef61af%3A0x612d60de15a505be!2sJohn%20Abbott%20College!5e0!3m2!1sen!2sca!4v1588014434793!5m2!1sen!2sca" frameborder="" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Spencer Kifell - 1937291 - Computer Science Student &copy; 2020</p>
+    </footer>
+
+</body>
+</html>

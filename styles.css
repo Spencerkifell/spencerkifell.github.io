@@ -1,26 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: auto;
     font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
     overflow-x: hidden;
+    background-color: darkgray;
 }
 
+/*Home Page*/
+
 nav{
+    position: sticky;
+    top: 0;
     margin: auto;
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
     background-color: #f4f4f2;
     flex-direction: row;
-    padding: 0 2em;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+    z-index: 5;
 }
 
 nav .right-side{
     align-self: center;
+    padding-right: 20px;
 }
 
 nav .left-side{
     align-self: center;
+    padding-left: 20px;
 }
 
 nav .right-side .standard{
@@ -71,7 +82,6 @@ nav .left-side h2{
     justify-content: center;
     align-items: center;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-    padding: 0 2em;
 }
 
 .hero-content{
@@ -109,8 +119,8 @@ nav .left-side h2{
     margin: auto;
     display: flex;
     flex-flow: column;
-    padding: 0 2em;
     background-color: #f4f4f2;
+    padding-bottom: 2em;
 }
 
 .about-me h2{
@@ -118,6 +128,9 @@ nav .left-side h2{
     font-size: 2em;
     font-weight: 385;
     color: #495464;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 85px;
 }
 
 .about-me .otherthing{
@@ -136,4 +149,194 @@ nav .left-side h2{
     font-size: 1.1em;
     font-weight: 350;
     color: #495464;
+    margin: 0 auto;
 }
+
+.projects{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    background-color: #f4f4f2;
+    flex-flow: column;
+}
+
+.projects .p-header{
+    display: flex;
+    justify-content: center;
+}
+
+.projects .p-header h2{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.projects .p-features{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+.projects h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 385;
+    color: #495464;
+}
+
+.projects img{
+    width: 17%;
+    margin-bottom: 85px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #bbbfca;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: none;
+}
+
+footer p{
+    display: flex;
+    color: #495464;
+    font-size: 1.2em;
+    font-weight: 450;
+}
+
+/*Contact Page*/
+
+.contact-me{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    background-color: #f4f4f2;
+    padding-bottom: 0;
+}
+
+.contact-me h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 385;
+    color: #495464;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 85px;
+}
+
+fieldset {
+    border-radius: 10px;
+  }
+
+form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #f4f4f2;
+}
+
+.contact-form{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    background-color: #f4f4f2;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 385;
+    padding-bottom: 50px;
+}
+
+.contact-form .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-radio{
+    margin-bottom: 20px;
+}
+
+.contact-form label{
+    margin-bottom: 5px;
+}
+
+.contact-form fieldset{
+    width: 50%;
+    margin: auto;
+}
+
+.contact-form .form input{
+    width: 99%;
+    height: 30px;
+}
+
+.contact-form .form select{
+    width: 100%;
+    height: 40px;
+}
+
+.form input[type="submit"]{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width:50%;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #f4f4f2;
+    font-size: 1.2em;
+    color: #495464;
+    font-weight: 100;
+    border: #495464 2px solid;
+}
+
+.form input[type="submit"]:hover{
+    border: #495464 2px solid;
+    background-color: #bbbbbe;
+}
+
+.location{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f2;
+    padding-bottom: 85px;
+}
+
+.location .location-map{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.location .location-map iframe{
+    min-width: 50%;
+}
+
+/*Influences Pages*/
+
+.influences{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    background-color: #f4f4f2;
+    padding-bottom: 2em;
+}
+
+.influences h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 385;
+    color: #495464;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 85px;
+}
+
