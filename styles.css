@@ -1,0 +1,139 @@
+body{
+    margin: auto;
+    font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    background-color: #f4f4f2;
+    flex-direction: row;
+    padding: 0 2em;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+
+nav .right-side{
+    align-self: center;
+}
+
+nav .left-side{
+    align-self: center;
+}
+
+nav .right-side .standard{
+    text-decoration: none;
+    color: #495464;
+    padding: 10px;
+    font-weight: 100;
+    font-size: large;
+}
+
+nav .right-side .selected{
+    text-decoration: none;
+    color: #495464;
+    padding: 10px;
+    font-weight: 100;
+    font-size: large;
+    border-radius: 5px;
+    border: #495464 2px solid;
+    padding: 3px 10px;
+}
+
+nav .right-side .standard:hover{
+    background-color: #bbbbbe;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #f4f4f2;
+}
+
+nav .right-side .selected:hover{
+    background-color: #bbbbbe;
+    border-radius: 5px;
+    border: #495464 2px solid;
+    color: #f4f4f2;
+}
+
+nav .left-side h2{
+    text-decoration: none;
+    color: #495464;
+    padding: 5px;
+    font-weight: 100;
+}
+
+.hero{
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    background-color: #bbbfca;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+    padding: 0 2em;
+}
+
+.hero-content{
+    height: 20em;
+}
+
+.hero-text{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-text h1{
+    color: #495464;
+    font-size: 3em;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hero-text h2{
+    color: #495464;
+    font-size: 1.2em;
+    font-weight: 375;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-me{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 0 2em;
+    background-color: #f4f4f2;
+}
+
+.about-me h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 385;
+    color: #495464;
+}
+
+.about-me .otherthing{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    
+}
+
+.about-me .otherthing p{
+    text-align: justify;
+    max-width: 600px;
+    padding: 10px;
+    border: 5px solid #bbbbbe;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 350;
+    color: #495464;
+}
