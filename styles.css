@@ -172,9 +172,8 @@ nav .left-side h2{
 
 .projects .p-features{
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-
+    justify-content: center;
 }
 
 .projects h2{
@@ -186,6 +185,8 @@ nav .left-side h2{
 
 .projects img{
     width: 17%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 85px;
 }
 
@@ -203,6 +204,7 @@ footer p{
     color: #495464;
     font-size: 1.2em;
     font-weight: 450;
+    text-align: center;
 }
 
 /*Contact Page*/
@@ -321,6 +323,51 @@ form{
 
 /*Influences Pages*/
 
+.img1{
+    display: flex;
+    grid-area: i1;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+.img2{
+    display: flex;
+    grid-area: i2;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+.img3{
+    display: flex;
+    grid-area: i3;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+.img4{
+    display: flex;
+    grid-area: i4;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+.img5{
+    display: flex;
+    grid-area: i5;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1, .img2, .img3, .img4, .img5{
+    margin: 1em;
+}
+
+.img1 img, .img2 img, .img3 img, .img4 img, .img5 img{
+    height: 100%;
+    width: 65%;
+}
+
 .influences{
     max-width: 1200px;
     margin: auto;
@@ -340,3 +387,33 @@ form{
     padding-top: 85px;
 }
 
+.wrapper{
+    max-width: 1200px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    -webkit-grid-template-rows: auto 1fr;
+    margin: 0 auto;
+    column-gap: 15px;
+    -webkit-grid-column-gap: 15px;
+    row-gap: 15px;
+    -webkit-grid-row-gap: 15px;
+    grid-template-areas: 
+    "i1 i2 i5"
+    "i3 i4 i5"
+    ;
+    -webkit-grid-template-areas:
+    "i1 i2 i5"
+    "i3 i4 i5"
+    ;
+    background-color: #f4f4f2;
+}
+
+.grid-inspirations{
+    max-width: 1200px;
+    padding-bottom: 85px;
+    background-color: #f4f4f2;
+    margin: 0 auto;
+}
