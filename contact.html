@@ -14,10 +14,10 @@
             <h2>Spencer Kifell</h2>
         </div>
         <div class = "right-side">
-            <a href = "./index.html#top" class="standard">Home</a>
-            <a href = "./index.html#about" class="standard">About</a>
-            <a href = "https://github.com/Spencerkifell" target="_blank" class="standard">GitHub</a>
-            <a href = "https://www.linkedin.com/in/spencerkifell/?originalSubdomain=ca" target="_blank" class="standard">Linkedin</a>
+            <a href = "./index.html" class="standard">Home</a>
+            <a href = "./index.html#about" class="query">About</a>
+            <a href = "https://github.com/Spencerkifell" target="_blank" class="query">GitHub</a>
+            <a href = "https://www.linkedin.com/in/spencerkifell/" target="_blank" class="query">Linkedin</a>
             <a href = "./contact.html" class="selected">Contact</a>
             <a href = "./influences.html" class="standard">Influences</a>
         </div>
@@ -28,7 +28,7 @@
         </div>
         <div class="hero-text">
             <h1>Contact Me</h1>
-            <h2><i>Spencer Kifell - Computer Science Student & Enthusiast</i></h2>
+            <h3><i>Spencer Kifell - Computer Science Student & Enthusiast</i></h3>
         </div>
     </section>
 
@@ -43,23 +43,23 @@
                 <form>
                     <div class = "form">
                         <label>Full Name:</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required="" placeholder="Enter your Full Name">
                     </div>
 
                     <div class = "form">
                         <label>Email:</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required="" placeholder="Enter your Email">
                     </div>
 
                     <div class = "form">
                         <label>Telephone:</label>
-                        <input type="text" name="phone">
+                        <input type="text" name="phone" required="" placeholder="Enter your Telephone Number">
                     </div>
 
                     <div class = "form">
                         <label>Canadian Province:</label>
                         <select name="location">
-                            <option></option>
+                            <option>Select a Province or Territory</option>
                             <option>Alberta</option>
                             <option>British Columbia</option>
                             <option>Manitoba</option>
@@ -76,9 +76,9 @@
                     <div class = "form-radio">
                         <p>Prefered Contact Method:</p>
                         <label>Phone:</label>
-                        <input type="radio" name="contact-method">
+                        <input type="radio" name="contact-method" required="">
                         <label>Email:</label>
-                        <input type="radio" name="contact-method">
+                        <input type="radio" name="contact-method" required="">
                     </div>
 
                     <div class = "form">
@@ -86,7 +86,7 @@
                     </div>
 
                     <div class = "form">
-                        <input type="submit" value="Confirm your data" onclick="showalert()">
+                        <input type="submit" value="Confirm" onclick="showalert()">
                     </div>
                 </form>
         </fieldset>
@@ -99,7 +99,7 @@
     </section>
 
     <footer>
-        <p>Spencer Kifell - 1937291 - Computer Science Student &copy; 2020</p>
+        <p>Spencer Kifell - Computer Science Student &copy; 2020</p>
     </footer>
 
 </body>

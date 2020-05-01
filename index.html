@@ -18,9 +18,9 @@
         </div>
         <div class = "right-side">
             <a href = #top class="selected">Home</a>
-            <a href = "./index.html#about" class="standard">About</a>
-            <a href = "https://github.com/Spencerkifell" target="_blank" class="standard">GitHub</a>
-            <a href = "https://www.linkedin.com/in/spencerkifell/?originalSubdomain=ca" target="_blank" class="standard">Linkedin</a>
+            <a href = "./index.html#about" class="query">About</a>
+            <a href = "https://github.com/Spencerkifell" target="_blank" class="query">GitHub</a>
+            <a href = "https://www.linkedin.com/in/spencerkifell/" target="_blank" class="query">Linkedin</a>
             <a href = "./contact.html" class="standard">Contact</a>
             <a href = "./influences.html" class="standard">Influences</a>
         </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="hero-text">
             <h1>Computer Science Student & Enthusiast</h1>
-            <h2><i>Aspiring to find success and skills in order to further enhance my capabilities</i></h2>
+            <h3><i>Aspiring to find success and skills in order to further enhance my capabilities</i></h3>
         </div>
     </section>
 
@@ -48,14 +48,26 @@
             <h2>Some of the projects I've worked on.</h2>
         </div>
         <div class = "p-features">
-            <img src ="ASSETS/EduBot-Logo.png">
-            <img src ="ASSETS/Mechahand-logo.png">
-            <img src ="ASSETS/UtilityBot-Logo.png">
+            <picture>
+                <source media = "(max-width: 985px)" srcset="ASSETS/TABLET PORT/EduBot-Logo_tablet.png">
+                <source media = "(max-width: 740px)" srcset="ASSETS/MOBILE PORT/EduBot-Logo_mobile.png">
+                <img src ="ASSETS/DESKTOP PORT/EduBot-Logo-desktop.png" alt="Logo for EduBot, one of the personal projects I've worked on.">
+            </picture>
+            <picture>
+                <source media = "(max-width: 985px)" srcset="ASSETS/TABLET PORT/Mechahand-logo_tablet.png">
+                <source media = "(max-width: 740px)" srcset="ASSETS/MOBILE PORT/Mechahand-logo_mobile.png">
+                <img src ="ASSETS/DESKTOP PORT/Mechahand-logo-desktop.png" alt="Logo for Mechand, one of the personal projects I've worked on."> 
+            </picture>
+            <picture>
+                <source media = "(max-width: 985px)" srcset="ASSETS/TABLET PORT/UtilityBot-Logo_tablet">
+                <source media = "(max-width: 740px)" srcset="ASSETS/MOBILE PORT/UtilityBot-Logo_mobile">
+                <img src ="ASSETS/DESKTOP PORT/UtilityBot-Logo-desktop.png" alt="Logo for UtilityBot, one of the personal projects I've worked on.">
+            </picture>
         </div>
     </section>
 
     <footer>
-        <p>Spencer Kifell - 1937291 - Computer Science Student &copy; 2020</p>
+        <p>Spencer Kifell - Computer Science Student &copy; 2020</p>
     </footer>
     
 </body>

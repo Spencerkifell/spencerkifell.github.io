@@ -31,10 +31,12 @@ nav .right-side{
 
 nav .left-side{
     align-self: center;
+    align-content: center;
+    justify-content: center;
     padding-left: 20px;
 }
 
-nav .right-side .standard{
+nav .right-side .standard, nav .right-side .query{
     text-decoration: none;
     color: #495464;
     padding: 10px;
@@ -51,9 +53,10 @@ nav .right-side .selected{
     border-radius: 5px;
     border: #495464 2px solid;
     padding: 3px 10px;
+    align-content: center;
 }
 
-nav .right-side .standard:hover{
+nav .right-side .standard:hover, nav .right-side .query:hover{
     background-color: #bbbbbe;
     padding: 3px 10px;
     border-radius: 5px;
@@ -105,7 +108,7 @@ nav .left-side h2{
     margin-bottom: 15px;
 }
 
-.hero-text h2{
+.hero-text h3{
     color: #495464;
     font-size: 1.2em;
     font-weight: 375;
@@ -148,6 +151,7 @@ nav .left-side h2{
     border-radius: 10px;
     font-size: 1.1em;
     font-weight: 350;
+    line-height: 1.4em;
     color: #495464;
     margin: 0 auto;
 }
@@ -183,10 +187,14 @@ nav .left-side h2{
     color: #495464;
 }
 
-.projects img{
-    width: 17%;
-    margin-left: 5%;
-    margin-right: 5%;
+.projects picture{
+    display: flex;
+    justify-content: center;
+}
+
+.projects picture img{
+    display: flex;
+    width: 60%;
     margin-bottom: 85px;
 }
 
@@ -202,8 +210,9 @@ footer{
 footer p{
     display: flex;
     color: #495464;
-    font-size: 1.2em;
-    font-weight: 450;
+    font-size: 1.1em;
+    font-weight: 350;
+    line-height: 1.4em;
     text-align: center;
 }
 
@@ -267,7 +276,7 @@ form{
 }
 
 .contact-form fieldset{
-    width: 50%;
+    width: 65%;
     margin: auto;
 }
 
@@ -318,55 +327,10 @@ form{
 }
 
 .location .location-map iframe{
-    min-width: 50%;
+    min-width: 65%;
 }
 
 /*Influences Pages*/
-
-.img1{
-    display: flex;
-    grid-area: i1;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-}
-.img2{
-    display: flex;
-    grid-area: i2;
-    background-color: blue;
-    justify-content: center;
-    align-items: center;
-}
-.img3{
-    display: flex;
-    grid-area: i3;
-    background-color: green;
-    justify-content: center;
-    align-items: center;
-}
-.img4{
-    display: flex;
-    grid-area: i4;
-    background-color: yellow;
-    justify-content: center;
-    align-items: center;
-}
-.img5{
-    display: flex;
-    grid-area: i5;
-    background-color: pink;
-    justify-content: center;
-    align-items: center;
-}
-
-.img1, .img2, .img3, .img4, .img5{
-    margin: 1em;
-}
-
-.img1 img, .img2 img, .img3 img, .img4 img, .img5 img{
-    height: 100%;
-    width: 65%;
-}
 
 .influences{
     max-width: 1200px;
@@ -409,6 +373,7 @@ form{
     "i3 i4 i5"
     ;
     background-color: #f4f4f2;
+    padding: 0 5%;
 }
 
 .grid-inspirations{
@@ -417,3 +382,230 @@ form{
     background-color: #f4f4f2;
     margin: 0 auto;
 }
+
+.img1, .img2, .img3, .img4, .img5{
+    display: flex;
+    background-color: #495464;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.img1{
+    grid-area: i1;
+}
+
+.img2{
+    grid-area: i2;
+}
+
+.img3{
+    grid-area: i3;
+}
+
+.img4{
+    grid-area: i4;
+}
+
+.img5{
+    grid-area: i5;
+}
+
+.img1 picture img, .img2 picture img, .img3 picture img, .img4 picture img, .img5 picture img{
+    height: 100%;
+    width: 100%;
+}
+
+.img1, .img2, .img3, .img4, .img5{
+    padding: 20px;
+    margin: 5px;
+}
+
+/*Learnt the transitions on W3 schools ("https://www.w3schools.com/css/css3_transitions.asp")*/
+
+.img1 p, .img2 p, .img3 p, .img4 p, .img5 p{
+    position: absolute;
+    width:15%;
+    transition: opacity 0.65s linear;
+    text-align: justify;
+    font-weight: 200;
+    visibility: hidden;
+    line-height: 1.4em;
+    color: #f4f4f2;
+}
+
+.img1:hover > p, .img2:hover > p, .img3:hover > p, .img4:hover > p, .img5:hover > p{
+    visibility: visible;
+}
+
+/*Learnt the (:not) Selector from W3 schools ("https://www.w3schools.com/cssref/sel_not.asp")*/
+
+.img1:hover :not(p), .img2:hover :not(p), .img3:hover :not(p), .img4:hover :not(p), .img5:hover :not(p){
+    opacity: 20%;
+}
+
+/*TV Query*/
+@media only screen and (min-width: 2000px)
+{
+    .img1 p, .img2 p, .img3 p, .img4 p, .img5 p{
+        width:10%;
+    }
+}
+
+/*Tablet Query*/
+@media only screen and (max-width: 985px) and (min-width: 741px)
+{
+    nav .right-side .query{
+        display: none;
+    }
+
+    .about-me h2{
+        font-size: 1.8em;
+    }
+
+    .projects h2{
+        font-size: 1.8em;
+    }
+
+    .projects img{
+        width: 25%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 85px;
+    }
+
+    .contact-me h2{
+        font-size: 1.8em;
+    }
+
+    .contact-form fieldset{
+        width: 75%;
+    }
+
+    .location .location-map iframe{
+        min-width: 75%;
+    }
+
+    .influences h2{
+        font-size: 1.8em;
+    }
+
+    .projects picture img{
+        width: 65%;
+        margin-bottom: 85px;
+    }
+
+    .img1 p, .img2 p, .img3 p, .img4 p, .img5 p{
+        position: absolute;
+        width:25%;
+        transition: opacity 0.65s linear;
+        text-align: justify;
+        font-weight: 200;
+        visibility: hidden;
+        line-height: 1.4em;
+    }
+
+    .img1:hover > p, .img2:hover > p, .img3:hover > p, .img4:hover > p, .img5:hover > p{
+        visibility: visible;
+    }
+    
+    .img1:hover :not(p), .img2:hover :not(p), .img3:hover :not(p), .img4:hover :not(p), .img5:hover :not(p){
+        opacity: 30%;
+    }
+
+    .img1 p, .img2 p, .img3 p, .img4 p, .img5 p{
+        width: 25%;
+        line-height: 1.3em;
+    }
+}
+
+/*Mobile Query*/
+@media only screen and (max-width: 740px)
+{
+    nav .right-side .query{
+        display: none;
+    }
+
+    nav .right-side .standard, nav .right-side .query{
+        text-decoration: none;
+        color: #495464;
+        padding: 5px;
+        font-weight: 100;
+        font-size: large;
+    }
+
+    nav .right-side .selected{
+        padding: 5px;
+        padding: 3px 5px;
+    }
+    
+    nav .right-side .standard:hover{
+        padding: 3px 5px;
+    }
+
+    nav .left-side h2{
+        padding: 5px;
+        font-size: larger;
+    }
+    
+    .hero-text h1{
+        font-size: 2em;
+    }
+
+    .hero-text h2{
+        font-size: 1.1em;
+        padding: 5px;
+    }
+
+    .about-me h2{
+        font-size: 1.6em;
+    }
+
+    .about-me .otherthing p{
+        font-size: 1.05em;
+    }
+
+    .projects h2{
+        font-size: 1.6em;
+    }
+
+    .projects picture img{
+        width: 75%;
+        margin-bottom: 85px;
+    }
+
+    .contact-me h2{
+        font-size: 1.6em;
+    }
+
+    .contact-form fieldset{
+        width: 75%;
+    }
+
+    .location .location-map iframe{
+        min-width: 75%;
+    }
+    
+    .img1 p, .img2 p, .img3 p, .img4 p, .img5 p{
+        display: none;
+    }
+    
+    .img1:hover > p, .img2:hover > p, .img3:hover > p, .img4:hover > p, .img5:hover > p{
+        visibility: hidden;
+    }
+    
+    .img1:hover :not(p), .img2:hover :not(p), .img3:hover :not(p), .img4:hover :not(p), .img5:hover :not(p){
+        opacity: 100%;
+    }
+
+    .influences h2{
+        font-size: 1.6em;
+    }
+
+    .img1, .img2, .img3, .img4, .img5{
+        padding: 20px;
+        margin: 0;
+    }
+
+}
+
