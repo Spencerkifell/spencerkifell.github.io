@@ -187,14 +187,12 @@ nav .left-side h2{
     color: #495464;
 }
 
-.projects picture{
-    display: flex;
-    justify-content: center;
-}
 
-.projects picture img{
+.projects img{
     display: flex;
-    width: 60%;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 85px;
 }
 
@@ -411,7 +409,7 @@ form{
     grid-area: i5;
 }
 
-.img1 picture img, .img2 picture img, .img3 picture img, .img4 picture img, .img5 picture img{
+.img1 img, .img2 img, .img3 img, .img4 img, .img5 img{
     height: 100%;
     width: 100%;
 }
@@ -569,7 +567,7 @@ form{
         font-size: 1.6em;
     }
 
-    .projects picture img{
+    .projects img{
         width: 75%;
         margin-bottom: 85px;
     }
