@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://www.pexels.com/favicon.ico">
+    <title>Pexels Videos - Spencer Kifell</title>
+</head>
+<body>
+    <nav>
+        <div class = "left">
+            <!--  Pexels Logo  -->
+            <a href = "index.html"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" class = "logo">
+                <path d="M2 0h28a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" fill="#05A081"></path>
+                <path d="M13 21h3.863v-3.752h1.167a3.124 3.124 0 1 0 0-6.248H13v10zm5.863 2H11V9h7.03a5.124 5.124 0 0 1 .833 10.18V23z" fill="#fff"></path>
+            </svg></a>
+
+            <div class = "companyName">
+                <a href="#home">Pexels</a>
+            </div>
+
+            <div class = "searchBar">
+                <form>
+                <input type="text" placeholder="Search for free photos" name="search" style="width: 85%;">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class = "right">
+            <div class = "list">
+                <a href="#home">Explore</a>
+                <a href="#home">License</a>
+                <a href="#home">Upload</a>
+            </div>
+        
+            <div class="wrap">
+                <!-- Three-dot Menu  -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class = "threeDot"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                <!-- Hamburger Menu -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"class = "hamburger"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </div>
+
+            <div class = "button">
+                <a href="#home">Join</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class = "hero-section">
+        <div class ="video-section">
+            <div class = "video-gradient"></div>
+            <video autoplay="" loop="" muted="" poster="https://www.pexels.com/assets/videos/free-videos-7daa2ef41a140f70c757ce91913a4ecb90570b7d7cd2b401bae868350e02c83a.jpg">
+                <source src = "https://static.pexels.com/lib/videos/free-videos.mp4" type="video/mp4">
+                <source src = "https://static.pexels.com/lib/videos/free-videos.webm" type="video/webm">
+            </video>
+        </div>
+        <div class = "hero-text">
+            <h1>The best free stock videos shared by the Pexels community.</h1>
+            <div class = "searchBar">
+                <form>
+                <input type="text" placeholder="Search for free videos" name="search" style="width: 85%;">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <p><span class = "suggested">Suggested: </span>storm, bee, flower, cars, underwater, fish, more</p>
+        </div>
+    </section>
+
+    <section class = "alt-nav">
+        <a href = "#home" class = "standard">Home</a>
+        <a href = "#home" class = "standard">Discover</a>
+        <a href = "#home" class = "selected">Videos</a>
+        <a href = "#home" class = "standard">Leaderboard</a>
+        <a href = "#home" class = "standard">Challenges</a>
+    </section>
+
+    <section class = "videoGrid">
+        <div class = "wrapper">
+            <div class = "Title">
+                <p>Trending Free Stock Videos</p>
+                <p>Trending<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"></path></svg></p>
+            </div>
+            
+            <div class = "Thunderbolt">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">
+                <img src = "https://images.pexels.com/videos/855936/free-video-855936.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of a lightning bolt. (Used to mimic a video)"> 
+            </div>    
+            <div class = "Sky">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">    
+                <img src = "https://images.pexels.com/videos/1869959/free-video-1869959.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of the sky above a field. (Used to mimic a video)">
+            </div>    
+            <div class = "Dryland">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">    
+                <img src = "https://images.pexels.com/videos/1572321/free-video-1572321.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of a car driving through the desert (Used to mimic a video)">
+            </div>   
+            <div class = "Traffic">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">
+                <img src = "https://images.pexels.com/videos/3676936/pexels-photo-3676936.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of overhead traffic. (Used to mimic a video)">
+            </div>    
+            <div class = "Dog">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">        
+                <img src = "https://images.pexels.com/videos/2796078/free-video-2796078.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of a woman hugging a dog. (Used to mimic a video)">
+            </div>   
+            <div class = "Underwater">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">    
+                <img src = "https://images.pexels.com/videos/857131/free-video-857131.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of water. (Used to mimic a video)">
+            </div>    
+            <div class = "WaterRocks">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">    
+                <img src = "https://images.pexels.com/videos/1093662/free-video-1093662.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of water hitting rocks. (Used to mimic a video)">
+            </div>    
+            <div class = "TravellingDesert">
+                <img src = "https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk10/assets/play.svg?sanitize=true" class = "play" alt = "Play button for the picutres (To mimic a video)">
+                <img src = "https://images.pexels.com/videos/1739011/free-video-1739011.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "Image of overhead oasis in desert. (Used to mimic a video)">
+            </div>
+        </div>    
+    </section>
+</body>
+</html>
