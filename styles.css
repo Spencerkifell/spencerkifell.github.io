@@ -16,7 +16,7 @@ nav{
     top: 0;
     margin: auto;
     display: flex;
-    max-width: 1200px;
+    max-width: 1500px;
     justify-content: space-between;
     background-color: #f4f4f2;
     flex-direction: row;
@@ -80,7 +80,7 @@ nav .left-side h2{
 .hero{
     display: flex;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1500px;
     background-color: #bbbfca;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@ nav .left-side h2{
 }
 
 .about-me{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     flex-flow: column;
@@ -139,7 +139,7 @@ nav .left-side h2{
 .about-me .otherthing{
     display: flex;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1500px;
     
 }
 
@@ -157,7 +157,7 @@ nav .left-side h2{
 }
 
 .projects{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     background-color: #f4f4f2;
@@ -190,7 +190,7 @@ nav .left-side h2{
 
 .projects img{
     display: flex;
-    width: 25%;
+    width: 20%;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 85px;
@@ -200,7 +200,7 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #bbbfca;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     overflow-x: none;
 }
@@ -217,7 +217,7 @@ footer p{
 /*Contact Page*/
 
 .contact-me{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     flex-flow: column;
@@ -247,7 +247,7 @@ form{
 }
 
 .contact-form{
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
     margin: auto;
     background-color: #f4f4f2;
@@ -309,7 +309,7 @@ form{
 }
 
 .location{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -331,7 +331,7 @@ form{
 /*Influences Pages*/
 
 .influences{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     flex-flow: column;
@@ -350,7 +350,7 @@ form{
 }
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1500px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
@@ -375,7 +375,7 @@ form{
 }
 
 .grid-inspirations{
-    max-width: 1200px;
+    max-width: 1500px;
     padding-bottom: 85px;
     background-color: #f4f4f2;
     margin: 0 auto;
