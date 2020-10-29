@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+    font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+    overflow-x: hidden;
+    background-color: darkgray;
+}
+
+/*Home Page*/
+
+nav{
+    position: sticky;
+    top: 0;
+    margin: auto;
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-between;
+    background-color: #f4f4f2;
+    flex-direction: row;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+    z-index: 5;
+}
+
+nav .right-side{
+    align-self: center;
+    padding-right: 20px;
+}
+
+nav .left-side{
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+nav .right-side .standard, nav .right-side .query{
+    text-decoration: none;
+    color: #495464;
+    padding: 10px;
+    font-weight: 100;
+    font-size: large;
+}
+
+nav .right-side .selected{
+    text-decoration: none;
+    color: #495464;
+    padding: 10px;
+    font-weight: 100;
+    font-size: large;
+    border-radius: 5px;
+    border: #495464 2px solid;
+    padding: 3px 10px;
+    align-content: center;
+}
+
+nav .right-side .standard:hover, nav .right-side .query:hover{
+    background-color: #bbbbbe;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #f4f4f2;
+}
+
+nav .right-side .selected:hover{
+    background-color: #bbbbbe;
+    border-radius: 5px;
+    border: #495464 2px solid;
+    color: #f4f4f2;
+}
+
+nav .left-side h2{
+    text-decoration: none;
+    color: #495464;
+    padding: 5px;
+    font-weight: 100;
+}
+
+#nameApi{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#nameApi input{
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: #495464 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nameApi button{
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 30.15px;
+    border: #495464 2px solid;
+    font-weight: 100;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#nameApi button:hover{
+    border: #495464 2px solid;
+    background-color: #bbbbbe;
+}
+
+#nameApi #output{
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    background-color: grey;
+    margin-top: 30.15px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#nameApi #output p{
+    font-size: 25px;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+#nameApi #output #content{
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+}
+
+#title{
+    font-weight: 100;
+    text-align: center;
+    font-size: 45px;
+}
