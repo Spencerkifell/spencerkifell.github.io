@@ -141,3 +141,43 @@ nav .left-side h2{
     text-align: center;
     font-size: 45px;
 }
+
+.hero{
+    display: flex;
+    margin: auto;
+    max-width: 1500px;
+    background-color: #bbbfca;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+
+.hero-content{
+    height: 20em;
+}
+
+.hero-text{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-text h1{
+    color: #495464;
+    font-size: 3em;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hero-text h3{
+    color: #495464;
+    font-size: 1.2em;
+    font-weight: 375;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}

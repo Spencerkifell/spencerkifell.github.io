@@ -3,78 +3,78 @@ html {
 }
 
 body{
-    margin: auto;
+    margin: auto !important;
     font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
-    overflow-x: hidden;
-    background-color: darkgray;
+    overflow-x: hidden !important;
+    background-color: darkgray !important;
 }
 
 /*Home Page*/
 
 nav{
-    position: sticky;
-    top: 0;
-    margin: auto;
-    display: flex;
-    max-width: 1500px;
-    justify-content: space-between;
-    background-color: #f4f4f2;
-    flex-direction: row;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-    z-index: 5;
+    position: sticky !important;
+    top: 0 !important; 
+    margin: auto !important;
+    display: flex !important;
+    max-width: 1500px !important;
+    justify-content: space-between !important;
+    background-color: #f4f4f2 !important;
+    flex-direction: row !important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08) !important;
+    z-index: 5 !important;
 }
 
 nav .right-side{
-    align-self: center;
-    padding-right: 20px;
+    align-self: center !important;
+    padding-right: 20px !important;
 }
 
 nav .left-side{
-    align-self: center;
-    align-content: center;
-    justify-content: center;
-    padding-left: 20px;
+    align-self: center !important;
+    align-content: center !important;
+    justify-content: center !important;
+    padding-left: 20px !important;
 }
 
 nav .right-side .standard, nav .right-side .query{
-    text-decoration: none;
-    color: #495464;
-    padding: 10px;
-    font-weight: 100;
-    font-size: large;
+    text-decoration: none !important;
+    color: #495464 !important;
+    padding: 10px !important;
+    font-weight: 100 !important;
+    font-size: large !important;
 }
 
 nav .right-side .selected{
-    text-decoration: none;
-    color: #495464;
-    padding: 10px;
-    font-weight: 100;
-    font-size: large;
-    border-radius: 5px;
-    border: #495464 2px solid;
-    padding: 3px 10px;
-    align-content: center;
+    text-decoration: none !important;
+    color: #495464 !important;
+    padding: 10px !important;
+    font-weight: 100 !important;
+    font-size: large !important;
+    border-radius: 5px !important;
+    border: #495464 2px solid !important;
+    padding: 3px 10px !important;
+    align-content: center !important;
 }
 
 nav .right-side .standard:hover, nav .right-side .query:hover{
-    background-color: #bbbbbe;
-    padding: 3px 10px;
-    border-radius: 5px;
-    color: #f4f4f2;
+    background-color: #bbbbbe !important;
+    padding: 3px 10px !important ;
+    border-radius: 5px !important;
+    color: #f4f4f2 !important;
 }
 
 nav .right-side .selected:hover{
-    background-color: #bbbbbe;
-    border-radius: 5px;
-    border: #495464 2px solid;
-    color: #f4f4f2;
+    background-color: #bbbbbe !important;
+    border-radius: 5px !important;
+    border: #495464 2px solid !important;
+    color: #f4f4f2 !important;
 }
 
 nav .left-side h2{
-    text-decoration: none;
-    color: #495464;
-    padding: 5px;
-    font-weight: 100;
+    text-decoration: none !important;
+    color: #495464 !important;
+    padding: 5px !important;
+    font-weight: 100 !important;
 }
 
 .hero{
@@ -223,6 +223,85 @@ footer p{
     flex-flow: column;
     background-color: #f4f4f2;
     padding-bottom: 0;
+}
+
+/*Features Page*/
+
+#features-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    background-color:  #f4f4f2;
+    max-width: 1500px;
+}
+
+.card {
+    width: 18rem;
+    margin: 25px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.card-title{
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;   
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn.btn-primary{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    text-decoration: none;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.card img{
+    max-height: 160px;
 }
 
 .contact-me h2{

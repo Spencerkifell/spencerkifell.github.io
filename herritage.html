@@ -14,13 +14,22 @@
         <div class = "right-side">
             <a href = "./index.html" class="standard">Home</a>
             <a href = "./index.html#about" class="query">About</a>
-            <a href = "./herritage.html" class="selected">Features</a>
+            <a href = "./features.html" class="selected">Features</a>
             <a href = "https://github.com/Spencerkifell" target="_blank" class="query">GitHub</a>
             <a href = "https://www.linkedin.com/in/spencerkifell/" target="_blank" class="query">Linkedin</a>
             <a href = "./contact.html" class="standard">Contact</a>
             <a href = "./influences.html" class="standard">Influences</a>
         </div>
     </nav>
+
+    <section class = "hero">
+        <div class = "hero-content">
+        </div>
+        <div class="hero-text">
+            <h1>Contact Me</h1>
+            <h3><i>Spencer Kifell - Computer Science Student & Enthusiast</i></h3>
+        </div>
+    </section>
 
     <div id="nameApi">
         <h1 id="title">NAME ORIGIN API</h1>
@@ -46,7 +55,7 @@
             .then(function(responseJson){
                 let text = document.getElementById('content');
                 text.innerHTML = "";
-                let obj = responseJson.country;
+                let obj = responseJson.planet;
                 for(let i = 0; i < 2; i++){
                     text.textContent += "\n";
                     text.textContent += `Country: ${obj[i].country_id}`;
