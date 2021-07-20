@@ -117,6 +117,15 @@ nav .left-side h2{
     margin-bottom: 30px;
 }
 
+.hero-text h4{
+    color: #495464;
+    font-size: 1.2em;
+    font-weight: 375;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .about-me{
     max-width: 1500px;
     margin: auto;
