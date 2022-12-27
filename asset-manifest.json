@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.67be165c.css",
+    "main.js": "/static/js/main.a9cc9e27.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/TitilliumWeb-Regular.ttf": "/static/media/TitilliumWeb-Regular.e53e0538893d432e0635.ttf",
+    "static/media/Houston-Peace.otf": "/static/media/Houston-Peace.3d2ed48ac5800bb50d98.otf",
+    "index.html": "/index.html",
+    "main.67be165c.css.map": "/static/css/main.67be165c.css.map",
+    "main.a9cc9e27.js.map": "/static/js/main.a9cc9e27.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67be165c.css",
+    "static/js/main.a9cc9e27.js"
+  ]
+}
